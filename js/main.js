@@ -1,7 +1,7 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 let sqrt = 0;
-let a = prompt('Введіть першу сторону прямокутника');
-let b = prompt('Введіть другу сторону прямокутника');
+let a = +prompt('Введіть першу сторону прямокутника');
+let b = +prompt('Введіть другу сторону прямокутника');
 function countSqrt(a, b) {
     sqrt = a * b;
     return sqrt;
@@ -12,7 +12,7 @@ document.write(`Площа прямокутника зі сторонами ${a}
 
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
 let sqrtCircle = 0;
-let r = prompt('Введіть радіус кола');
+let r = +prompt('Введіть радіус кола');
 
 function countSqrtCircle () {
     sqrtCircle = Math.round(Math.PI*(r**2));
@@ -24,8 +24,8 @@ document.write(`<p>Площа кола з радіусом R ${r} = ${sqrtCircle
 
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 let cylinderVolume = 0;
-let hc = prompt('Введіть висоту циліндра');
-let rc = prompt('Введіть радіус циліндра');
+let hc = +prompt('Введіть висоту циліндра');
+let rc = +prompt('Введіть радіус циліндра');
 
 function countCilVol () {
     cylinderVolume = Math.round(Math.PI * rc**2 * hc);
